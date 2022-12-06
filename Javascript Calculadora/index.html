@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="grid-container">
+        <div id="output">
+            <pre id="upper"></pre>
+            <pre id="lower">0</pre>
+        </div>
+        <div class="grid-item"><button onclick="pressNum(this)">7</button></div>
+        <div class="grid-item"><button onclick="pressNum(this)">8</button></div>
+        <div class="grid-item"><button onclick="pressNum(this)">9</button></div>
+
+        <div class="grid-item"><button onclick="pressOperator(this)">-</button></div>
+        <div class="grid-item"><button onclick="pressOperator(this)">x</button></div>
+        <div class="grid-item"><button onclick="pressOperator(this)">÷</button></div> 
+
+        <div class="grid-item"><button onclick="pressNum(this)">4</button></div>
+        <div class="grid-item"><button onclick="pressNum(this)">5</button></div>
+        <div class="grid-item"><button onclick="pressNum(this)">6</button></div>
+        
+        <div class="grid-item"><button onclick="pressOperator(this)">%</button></div>
+        <div class="grid-item"><button onclick="pressSqrt()">√</button></div>
+        <div class="grid-item"><button onclick="pressOperator(this)">ⁿ</button></div>
+
+        <div class="grid-item"><button onclick="pressNum(this)">1</button></div>  
+        <div class="grid-item"><button onclick="pressNum(this)">2</button></div>
+        <div class="grid-item"><button onclick="pressNum(this)">3</button></div>
+      
+        <div class="grid-item"><button onclick="pressDot()">.</button></div>
+        <div class="grid-item"><button onclick="pressNum(this)">0</button></div>
+        <div class="grid-item"><button onclick="pressOperator(this)">+</button></div>
+
+        <div class="clear">
+            <button style="height: 100px; width: 334px;" onclick="pressClear()">Clear</button>
+        </div>
+        <div class="igual">
+            <button style="height: 100px; width: 334px;" onclick="pressEqual()">=</button>
+        </div>
+      </div>
+      <script src="app.js"></script>
+</body>
+</html>
